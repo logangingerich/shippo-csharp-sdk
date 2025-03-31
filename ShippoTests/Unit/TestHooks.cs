@@ -15,7 +15,7 @@ public class Hooks
     {
         ShippoAuthBeforeRequestHook hook = new ShippoAuthBeforeRequestHook();
         BeforeRequestContext hookCtx = new BeforeRequestContext(
-            new HookContext("test", "test", null, null));
+            new HookContext("http://example.com", "test", null, null));
         HttpRequestMessage request = new HttpRequestMessage();
 
         if (scheme is null)
